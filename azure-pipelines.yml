@@ -38,7 +38,10 @@ steps:
     version: '$(build.buildNumber)'
     filepath: '$(build.artifactstagingdirectory)'
     sandboxName: 'Daily Build'
+    createSandBox: false
     maximumWaitTime: '360'
+    importResults: false # true is required to view Veracode results in Azure DevOps
+    failBuildIfUploadAndScanBuildStepFails: false
     failBuildOnPolicyFail: false
 #- task: CmdLine@2
 #  displayName: Veracode Static Pipeline Scanner
