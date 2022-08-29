@@ -40,7 +40,7 @@ steps:
     sandboxName: 'Daily Build'
     createSandBox: false
     maximumWaitTime: '360'
-    importResults: true # true is required to view Veracode results in Azure DevOps
+    importResults: false # true is required to view Veracode results in Azure DevOps
     failBuildIfUploadAndScanBuildStepFails: false
     failBuildOnPolicyFail: false
 #- task: CmdLine@2
