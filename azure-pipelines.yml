@@ -39,7 +39,7 @@ steps:
     filepath: '$(build.artifactstagingdirectory)'
     sandboxName: 'Daily Build'
     maximumWaitTime: '360'
-    failBuildOnPolicyFail: true
+    failBuildOnPolicyFail: false
 #- task: CmdLine@2
 #  displayName: Veracode Static Pipeline Scanner
 #  inputs:
