@@ -38,6 +38,7 @@ steps:
     filepath: '$(build.artifactstagingdirectory)'
     sandboxName: 'Daily Build'
     maximumWaitTime: '360'
+    failBuildOnPolicyFail: true
 #- task: CmdLine@2
 #  displayName: Veracode Static Pipeline Scanner
 #  inputs:
@@ -52,3 +53,8 @@ steps:
 #    PathtoPublish: 'results.json'
 #    ArtifactName: 'Build'
 #    publishLocation: 'Container'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Command Line Step
+      
