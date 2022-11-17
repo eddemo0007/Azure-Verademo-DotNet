@@ -37,7 +37,7 @@ steps:
     veracodeAppProfile: 'Azure DevOps Verademo using Veracode Plugins'
     version: '$(build.buildNumber)'
     filepath: '$(build.artifactstagingdirectory)'
-    sandboxName: 'Daily Build'
+#    sandboxName: 'Daily Build' commented out on 11/17/22
     createSandBox: false
     maximumWaitTime: '360'
     importResults: false # true is required to view Veracode results in Azure DevOps
